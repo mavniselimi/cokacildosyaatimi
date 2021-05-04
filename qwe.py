@@ -20,6 +20,8 @@ class ghetto(GridLayout):
         webbrowser.open_new("https://us04web.zoom.us/j/8080079163?pwd=UitJVWs4Y0dOU2ZjbHMvZUVBQVZXdz09")
     def tarihCallback(self,a):
         webbrowser.open_new("https://us04web.zoom.us/j/7045543550?pwd=yPBZGImZndgSF-Mj4JRTaFTq2Oh94Bs")
+    def cogCallback(self,a):
+        webbrowser.open_new("https://us04web.zoom.us/j/6832847624?pwd=TzhNUzlFNHM2K3FpR09nVHhCaFZPQT09")
     def bilisiCallback(self,a):
         webbrowser.open_new("https://us02web.zoom.us/j/3469922894")
     def muzCallback(self,a):
@@ -33,7 +35,7 @@ class ghetto(GridLayout):
         
     def __init__(self,**kwargs):
         super(ghetto, self).__init__(**kwargs)
-        self.cols = 3
+        self.cols = 2
         self.btn1 = Button(text='MATEMATİK')
         self.btn1.bind(on_press=self.matCallback)
         self.btn2 = Button(text='KİMYA')
@@ -52,6 +54,9 @@ class ghetto(GridLayout):
         self.btn8.bind(on_press=self.muzCallback)
         self.btn9 = Button(text='İNGİLİZCE')
         self.btn9.bind(on_press=self.ingCallback)
+        self.btn10 = Button(text='COĞRAFYA')
+        self.btn10.bind(on_press=self.cogCallback)
+        self.add_widget(self.btn10)
         self.add_widget(self.btn1)
         self.add_widget(self.btn2)
         self.add_widget(self.btn3)
